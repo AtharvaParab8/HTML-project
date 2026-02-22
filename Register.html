@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./e-comm/style.css" />
+  </head>
+  <body>
+    <!-- id and for will get binded -->
+    <!-- name will be same as database -->
+    <div style="margin: auto; width: 50%">
+      <form action="">
+        <fieldset>
+          <legend>Register</legend>
+
+          <label for="">UserName <sup style="color: red">*</sup></label>
+          <input
+            type="text"
+            placeholder="Enter name "
+            id="userName"
+            name="UN"
+            required
+            minlength="5"
+            maxlength="10"
+          />
+          <br />
+          <br />
+          <label for="pwd">Password <sup style="color: red">*</sup></label>
+          <input
+            type="password"
+            placeholder="Enter password"
+            id="pwd"
+            name="pwd"
+            required
+            pattern="[A-Z,a-z]{3,5}"
+          />
+          <br /><br />
+          <label for="mob">Mobile Number</label>
+          <select name="mobile" id="mob">
+            <option value="+91">+91</option>
+            <option value="+92">+92</option>
+            <option value="+93">+93</option>
+            <option value="+94">+94</option>
+          </select>
+          <input type="number" minlength="10" maxlength="10" />
+
+          <br /><br />
+          <label for="">Gender</label>
+
+          <input type="radio" id="m" name="gender" value="male" />
+          <label for="m">male</label>
+
+          <input type="radio" id="fem" name="gender" value="female" />
+          <label for="fem">Female</label>
+          <br /><br />
+
+          <label for="add">Address</label>
+          <textarea name="add" id="" add></textarea>
+          <br /><br />
+
+          <button type="submit">Submit</button>
+          <button type="reset">Cancel</button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
