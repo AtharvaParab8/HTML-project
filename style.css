@@ -44,6 +44,7 @@ header{
     width:300px;
     border:none;
     outline: none;
+    background-color: transparent;
 }
 
 .headButton{
@@ -155,7 +156,7 @@ table{
     border-radius: 10px;
     width:250px;
     padding:5px 5px 30px 5px;
-    height: 300px;
+    height: 340px;
 
 }
 .categories button{
@@ -180,7 +181,7 @@ table{
     border-radius: 8px;
 }
 #third{
-    height:150px;
+    height:190px;
     width:100%;
     border-radius: 8px;
 }
